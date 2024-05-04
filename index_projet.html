@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+	<head>
+		<title> Portfolio </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/style_projet.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style_navbar.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ 
+        
+		<!-- <link rel="stylesheet" type="text/css" href="CSS_bootstrap/bootstrap.min.css"> -->
+	</head>
+	<body>
+        
+
+	<!------------------------------------------------------DEBUT NAVBAR ------------------------------------------->
+	<header>
+		<nav class="navbar">
+			<input type="checkbox" id="check" name="" value="">		
+			<div class="logo">
+				<a  href="index.html"><img src="image/logo.png"  alt=""></a> 
+			</div>
+			<ul class="menu">  				
+                <li>
+					<a href="#">Parcours</a>
+					<ion-icon class="icone-bas" name="chevron-down-outline"></ion-icon>
+					<ul class="dropdown-menu">
+						<li><a href="index_parcours.html">Parcours</a></li> 
+						<li><hr class="dropdown-divider"></li>
+						<li><a  href="index_formation.html">Formation</a></li> 
+					</ul>				
+				</li>
+                <li>		
+					<a href="#">Expérience</a>
+					<ion-icon class="icone-bas" name="chevron-down-outline"></ion-icon>
+					<ul class="dropdown-menu">
+						<li><a  href="index_projet.html">Projet</a></li> 
+						<li><a  href="index_alternance.html">Alternance</a></li> <!--  Ajouter le lien de la page parcours  -->
+					</ul>
+				</li>
+                <li><a href="index_competence.html">Compétence</a></li>
+                <li><a href="index_va.html">Vie associative</a></li>
+			</ul>	
+			<label for="check" id="checkbtn" ><ion-icon name="menu-outline"></ion-icon></label>			
+		</nav>		
+	</header>
+	<!-------------------------------------------------------- FIN NAVBAR ------------------------------------------->
+
+	<h1>Mon projets</h1>
+	<div class="container-page-projet">
+		<!-- ------------DEBUT DU PREMIER PROJET ------------ -->	
+		<div class="titre-projet">
+			<h3>Enquête sur le bilan carbone des membres de l’IUT de Paris-Rives de Seine</h3>
+		</div>
+		
+		<div class="box-intro">
+			<ul> 
+				<li>Source : Données issues suite au sondage sur les habitudes et les changements que les membres de l’établissement seraient prêts à effectuer pour réduire leur empreinte carbone.
+				</li>
+				<li><strong>Bais et Enjeux :</strong> </li>
+				<ul> 
+					<p>- Proportion d’une population jeune en masse</p> 
+					<p>- 47% des usagers sont âgés entre 18 et 26 ans </p>
+				</ul>
+				<li>Projet réalisé en groupe de 4 personnes </li>
+				
+			</ul>
+		</div>
+		
+		<div class="box">
+			<h4>Nettoyage et traitement de la base données</h4>
+			<p>
+			Suite aux résultats reçus après la diffusion du sondage, j’ai exporté la base de données contenant les résultats des personnes de l’IUT ayant répondu. Ensuite j’ai procédé au nettoyage et tri des données en sélectionnant les individus ayant répondu à toutes les questions jusqu’à la fin du questionnaire.
+			</p>
+			<h4> Analyse des pratiques écologiques menées </h4>
+			<p>
+				Les types de transports utilisés pour voyager, le type de régime type régime suivi, la fréquence de consommation de viande font partie des pratiques interroger aux usagers.
+			Pour étudier ces pratiques écologiques en fonction de l'âge, j’ai établi une analyse statistique bivariée ainsi que des graphiques pour visualiser les résultats.
+			J’ai créé des classes d'âge de façon équilibrée afin d’avoir la répartition des individus en fonction de l'âge. 
+
+			</p>
+			<h4>Détermination de lien de dépendance </h4>
+			<p>Le calcul de la p-valeur a montré les variables âge et le régime suivie sont ainsi significativement liées.
+				En effet, les résultats démontrent que la classe d'âge 26 - 35 ans s’avère être de plus en plus consciente en matière d’écologie et privilégie un régime végétarien ou végan ou flexitarien afin de réduire au mieux leur consommation de viande.
+			</p>
+
+		</div>
+		
+			<!------------------------------------DEBUT CAROUSEL-------------------------------->
+
+		<div class="box-carousel">
+			<div class="carousel">
+				<ul class="slides">
+					<input type="radio" name="radio-buttons" id="img-1" checked />
+					<li class="slide-container">
+					  <div class="slide-image">
+						<img src="image/projet1-enq1.png">
+					  </div>
+					  <div class="carousel-controls">
+						<label for="img-3" class="prev-slide">
+						  <span>&lsaquo;</span>
+						</label>
+						<label for="img-2" class="next-slide">
+						  <span>&rsaquo;</span>
+						</label>
+					  </div>
+					</li>
+					<input type="radio" name="radio-buttons" id="img-2" />
+					<li class="slide-container">
+					  <div class="slide-image">
+						<img src="image/projet1-enq2.png">
+					  </div>
+					  <div class="carousel-controls">
+						<label for="img-1" class="prev-slide">
+						  <span>&lsaquo;</span>
+						</label>
+						<label for="img-3" class="next-slide">
+						  <span>&rsaquo;</span>
+						</label>
+					  </div>
+					</li>
+					<input type="radio" name="radio-buttons" id="img-3" />
+					<li class="slide-container">
+					  <div class="slide-image">
+						<img src="image/projet1-enq3.png">
+					  </div>
+					  <div class="carousel-controls">
+						<label for="img-2" class="prev-slide">
+						  <span>&lsaquo;</span>
+						</label>
+						<label for="img-1" class="next-slide">
+						  <span>&rsaquo;</span>
+						</label>
+					  </div>
+					</li>
+					<div class="carousel-dots">
+					  <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+					  <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+					  <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+					  <p><span style="color:#4D194D;">Livrables :</span> Présentation PowerPoint et Rapport d'Analyse</p>
+					  <p><span style="color:#4D194D;">Outils utilisés :</span>Microsoft Office dont Excel, PowerPoint</p>
+					</div>
+				  </ul>
+				</div>
+			</div>	
+
+	</div>
+			<!-- ------------FIN DU PREMIER PROJET ------------ -->			
+		
+
+
+
+			<!-- -----------------DEBUT 2eme PROJET------------------------>
+			<div class="container-page-projet">
+				<!-- ------------DEBUT DU PREMIER PROJET ------------ -->	
+				<div class="titre-projet">
+					<h3>Etude analytique du lien entre la taille de la population et les performances des pays aux Jeux Olympiques d'hiver</h3>
+				</div>
+				
+				<div class="box-intro">
+					<ul> 
+						<li>Source : Bases de données issues des sites<a href="https://databank.worldbank.org/"> DataBank </a>et <a href="https://www.data.gouv.fr/fr/"> data.gouv.fr </a>
+						</li>
+						<p>Afin d'analyser au mieux notre sujet, la base de données est importée à partir du site Data gouv contenant les données concernant les différentes médailles des Jeux Olympique d’hiver de 1924 à 2010. La seconde base de données regroupe l’évolution de la taille de la population des pays de 1960 à 2021 et comprend des informations telles que l'année, le sport, la médaille remportée, le pays et le pays hôte des Jeux.</p>
+						<li>Projet réalisé en groupe de 4 personnes </li>
+					</ul>
+				</div>
+				
+				<div class="box">
+					<h4>Structuration et traitement de bases de données</h4>
+					<p>
+						Un travail préliminaire de traitement des bases de données sur Rstudio est réalisé. J’ai joint les bases de données et nettoyé celles-ci suivant d’une sélection des variables nécessaires pour l’étude. 
+					</p>
+					<h4>Analyses des performances et des populations au Jeux olympique d’hiver
+					</h4>
+					<p>
+						Dans le cadre de ce projet, le nombre d’habitants par pays est étudié. Afin d’analyser le nombre de médailles remportées, j’ai créé des classes de pays en fonction de la taille de leur population pour une année donnée. Une analyse est faite sur la population moyenne des pays participants aux Jeux Olympiques et le score moyen des médailles de ces pays par année par année. 		
+					</p>
+					<h4>Création de visualisation et calcul de corrélation 	</h4>
+					<p>
+					Pour visualiser les résultats, j’ai créé les différents graphiques dont ceux présentés. Le calcul de corrélation entre les variables est réalisé afin de déterminer le lien entre les variables. Ce calcul a montré que la corrélation entre la population maximale atteinte par un pays et le score des médailles maximal obtenu ne prouve pas un lien direct entre l'augmentation de la population et les performances aux Jeux.
+					</p>
+		
+				</div>
+
+				<div class="box-image">
+					<img src="image/projet2-jo1.png">
+					<p><span style="color:#4D194D;">Livrables :</span> Rapport analytique présentant les résultats et les graphiques et une soutenance					</p>
+					<p><span style="color:#4D194D;">Outils utilisés :</span>Rstudio, Excel, PowerPoint	</p>
+		
+				</div>
+
+
+			
+		
+
+			<!-- ----------FIN 2eme PROJET----------------- -->
+
+			
+	
+		<!-- ------------DEBUT DU TROISIEME PROJET ------------ -->	
+		<div class="container-page-projet2"></div>
+		<div class="titre-projet">
+			<h3>Collecte des coordonnées géographiques des entreprises et des établissements via l’API</h3>
+		</div>
+		
+		<div class="box-intro">
+			<ul> 
+				<li> Base données <a href="https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/ ">Sirene </a> des entreprises et de leurs établissements issue de <a href="https://www.data.gouv.fr/fr/">data.gouv.fr </a>
+				</li>
+				<li><strong>Enjeux : Fichier de données de départ très grand (6 go)</strong> </li>
+				<li>Projet réalisé en groupe de 2 personnes </li>
+			</ul>
+		</div>
+		<div class="box">
+			<h4>Programmation statistique et traitement de la base de données </h4>
+			<p>La base de données a été nettoyée en amont. Le code a été développé d’abord à partir des 1000 premières lignes du fichier. A l’aide de la library Pandas a permis de créer des dataframes auxquelles j’ai joint des variables. 
+			</p>
+			<h4>Préparation du fichier à envoyer à l’ API  </h4>
+			<p>
+			Un fichier de données est préparé pour récupérer l’ensemble des coordonnées géographiques via l’API. Les données tels que le numéro de siren, siret, l’adresse, le code postale et la commune sont sélectionnées. Ces données sont essentielles afin d’assurer que le fichier de données sur les entreprises et des établissements collecte les données.
+
+			</p>
+			<h4>Envoie du fichier permettant de collecter les coordonnées via l’API			</h4>
+			<p>Des requêtes sont envoyées à l’API pour récupérer les coordonnées géographiques des entreprises et des établissements. 
+			</p>
+			<h4> Stockage des données </h4>
+			<P>Les résultats reçus grâce à l’API sont stockés dans une nouvelle base de données. 
+				Les coordonnées géographiques ont permis de compléter les informations concernant les adresses des entreprises et des établissements et à alimenter la base de données.
+				</P>
+		</div>
+		<div class="image-projet2"> 
+			<img src="image/projet-collecte-api.jpg" width=40%>
+			<p><span style="color:#4D194D;">Livrables :</span> Code python jupyter permettant de générer les données à partir du web			</p>
+			<p><span style="color:#4D194D;">Outils utilisés :</span>Jupyter Notebook, Excel</p>
+		</div>
+
+
+
+
+
+
+				
+    </body>
+</html>
