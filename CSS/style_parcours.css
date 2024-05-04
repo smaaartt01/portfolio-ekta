@@ -1,0 +1,192 @@
+*{
+  font-family: "Poppins", sans-serif;
+  /*box-sizing: border-box;*/
+}
+
+h1 {
+  padding: 20px  50px;
+  margin:20px 20px 0 20px ;
+  font-weight: 600;
+  text-align: center;
+  color:#4D194D;
+  background-color: #E2FCEF;
+}
+.timeline{
+  position:relative;
+  max-width: 1200px;
+  margin:100px auto;
+}
+.container{
+  padding:10px 50px;
+  position:relative;
+  width: 50%;
+  animation: movedown 1s linear forwards ;
+}
+
+@keyframes movedown {
+  0%{
+      opacity: 1;
+      transform: translateY(-30px);/*translateY permet de donner l'effet vertical*/
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+/*animation pour que chaque blocs s'affiche un par un*/
+.container:nth-child(1){
+  animation-delay: 0s;
+}
+.container:nth-child(2){
+  animation-delay: 1s;
+}
+.container:nth-child(3){
+  animation-delay: 3s;
+}
+
+.text-box{
+  padding:20px 30px;
+  background: #E2FCEF;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+
+.left-container{
+  left:0
+}
+
+.right-container{
+  left:50%
+}
+
+.container img{
+  position: absolute;
+  width: 40px;
+  border-radius:50%;
+  right: -20px;
+  top:32px;
+  z-index:10;
+}
+
+.right-container img{
+  left:-20px;
+}
+
+.timeline::after{
+  content:'';
+  position:absolute;
+  width: 8px;
+  height: 100%;
+  background:#4D194D;
+  top:0;
+  left: 50%;
+  margin-left: -3px;
+  z-index:-1;
+  animation:moveline 3s linear forwards ;
+}
+/*animation*/
+@keyframes moveline{
+  0%{
+      height: 0;
+  }
+  100%{
+      height: 100%;
+  }
+}
+
+
+.text-box h2{
+  font-weight: 600;
+  color: #4D194D;
+
+}
+.text-box small{
+  display:inline-block;
+  margin-bottom: 15px;
+}
+
+.text-box p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.left-container-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #E2FCEF;
+  right: -15px; /*position de la flèche*/
+}
+
+.right-container-arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #E2FCEF;
+  left: -15px; /*position de la flèche*/
+
+}
+
+@media screen and (max-width:800px){
+
+  .timeline{
+      margin:50px auto;
+  }
+  .timeline::after{
+      left:31px;
+  }
+  .container{
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+  }
+  .text-box{
+      font-size:13px;
+  }
+  .text-box small{
+      margin-bottom: 10px;
+  }
+  .right-container{
+      left:0;
+  }
+  .left-container img, .right-container img{
+      left:10px;
+  }
+  .left-container-arrow, .right-container-arrow{
+      border-right: 15px solid #E2FCEF;
+      border-left: 0;
+      left:-20px;
+  }
+}
+
+
+.knowmore{
+	display: inline-block;
+	text-decoration: none;
+	color:#CAC2B5;
+	border: 1px solid #CAC2B5;
+	padding: 8px 10px;
+	font-size: 13px;
+	background: #4D194D;
+	position: relative;
+
+}
+
+.knowmore:hover{
+	border: 3px solid #4D194D;
+	background-color:#E2FCEF;
+	color: #4D194D;
+	transition: 1s;
+
+}

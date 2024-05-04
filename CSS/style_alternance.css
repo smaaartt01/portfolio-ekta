@@ -1,0 +1,65 @@
+* { box-sizing: border-box; }
+
+.contenue-page-alter {
+    display: flex;
+    justify-content: space-between; /* Distribue les éléments également dans l'espace disponible */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments lorsque l'espace est insuffisant */
+    
+}
+.intro-al{
+    box-sizing: border-box; 
+    padding: 20px  50px;
+    width: 100%;
+    display: flex; 
+    justify-content:space-around;
+    text-align: center;
+}
+.intro-al a img{
+    width: 30%;
+}
+.intro-al a img:hover{
+    animation: movedown 1s linear forwards ;
+}
+
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-10px);/*translateY permet de donner l'effet vertical*/
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+.intro-al h1{
+    text-align: left;
+    padding-top: 20px;
+    color: #4D194D;
+    font-weight: 500;
+}
+.intro-al-text{
+    padding: 20px 50px;
+    text-align:center;
+}
+
+.list-missions{
+    padding: 20px  50px;
+}
+.list-missions h2{
+    color: #4D194D;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 980px) {
+    .contenue-page-alter{
+      flex-direction: column;
+        
+    }
+    .intro-al h2{
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+}

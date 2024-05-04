@@ -1,0 +1,125 @@
+* { box-sizing: border-box; }
+
+.container-page-for {
+    display: flex;
+    justify-content: space-between; /* Distribue les éléments également dans l'espace disponible */
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments lorsque l'espace est insuffisant */
+    
+}
+
+.formation{
+    color:#4D194D;
+    background-color: #E2FCEF;
+    box-sizing: border-box; 
+    padding: 20px  50px;
+    width: 100%;
+    display: flex;
+
+}
+
+.formation h2,h3 {
+    padding: 0 10px;
+}
+
+.formation-img{
+    /*justify-content: center;
+    align-items: center;  Pour aligner verticalement si nécessaire */
+    box-sizing: border-box; 
+    width: 50%;
+    padding: 20px 60px;
+    background-color: #E2FCEF;
+}
+.formation-img img{
+    float: right;
+    width: 20%;
+    padding: 20px 60px;
+    
+
+}
+
+.formation-text{
+    padding: 30px;
+    font-size: 14px;
+}
+.formation-text p{
+    padding-bottom: 10px;
+}
+.knowmore{
+    margin: 0 30px;
+	display: inline-block;
+	text-decoration: none;
+	color:#CAC2B5;
+	border: 1px solid #CAC2B5;
+	padding: 8px 8px;
+	font-size: 13px;
+	background: #4D194D;
+	position: relative;
+
+}
+.knowmore:hover{
+	border: 3px solid #4D194D;
+	background-color:#E2FCEF;
+	color: #4D194D;
+	transition: 1s;
+
+}
+
+.paroours{
+    color:#4D194D;
+    box-sizing: border-box; 
+    padding: 20px  30px;
+    
+    
+}
+.parcours-text{
+    display: flex;
+    color: black;
+    
+}
+.parcours-text p{
+    padding-top: 10px;
+}
+
+.point-fort{
+    box-sizing: border-box; 
+    padding: 20px  30px;
+}
+.point-fort h2{
+    color:#4D194D;
+}
+
+.point-fort li{
+    color:#4D194D;
+    
+}
+.point-fort li, p{
+    padding:5px 30px  ;
+}
+
+
+@media (max-width: 980px) {
+    .container-page-for{
+      flex-direction: column;
+        
+    }
+    .formation{
+        width: 100%;
+    }
+    .formation-intro{
+        width: 100%;
+    }
+    .formation-img{
+        display: none;
+    }
+    .parcours-text img{
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .parcours-text img{
+        display: none;
+    }
+
+}

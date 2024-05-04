@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title> Portfolio </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<link rel="stylesheet" type="text/css" href="CSS/style_navbar.css">
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<!-- <link rel="stylesheet" type="text/css" href="CSS_bootstrap/bootstrap.min.css"> -->
+		</head>
+	<body>
+	
+	
+	<!------------------------------------------------------DEBUT NAVBAR ------------------------------------------->
+	<header>
+		<nav class="navbar">
+			<input type="checkbox" id="check" name="" value="">		
+			<div class="logo">
+				<a  href="index.html"><img src="image/logo.png"  alt=""></a> 
+			</div>
+			<ul class="menu">  				
+                <li>
+					<a href="#">Parcours</a>
+					<ion-icon class="icone-bas" name="chevron-down-outline"></ion-icon>
+					<ul class="dropdown-menu">
+						<li><a href="index_parcours.html">Parcours</a></li> 
+						<li><hr class="dropdown-divider"></li>
+						<li><a  href="index_formation.html">Formation</a></li> 
+					</ul>				
+				</li>
+                <li>		
+					<a href="#">Expérience</a>
+					<ion-icon class="icone-bas" name="chevron-down-outline"></ion-icon>
+					<ul class="dropdown-menu">
+						<li><a  href="index_projet.html">Projet</a></li> 
+						<li><a  href="index_alternance.html">Alternance</a></li> <!--  Ajouter le lien de la page parcours  -->
+					</ul>
+				</li>
+                <li><a href="index_competence.html">Compétence</a></li>
+                <li><a href="index_va.html">Vie associative</a></li>
+			</ul>	
+			<label for="check" id="checkbtn" ><ion-icon name="menu-outline"></ion-icon></label>			
+		</nav>		
+	</header>
+	<!-------------------------------------------------------- FIN NAVBAR ------------------------------------------->
+
+		<!-- ---------------------------PARTIE PAGE : ACCEUIL -------------------------  -->
+	<!-- <span class="border-bottom"></span> -->
+		<div class="contenue-page-accueil">
+			<div class="present">
+				<h2>Bienvenue sur mon e-Portfolio</h2>
+				<h1>Je m'appelle Ekta Mistry</h1>
+				<h4>Etudiante en  2ème année de BUT Science des données en alternance</h4>
+				<p>Actuellement étudiante en alternance, je travaille au sein de CNP Assurances en tant qu’assistante décisionnelle et informatique. Voici mon portfolio qui retrace mon parcours professionnel. Vous découvrirez mes compétences développées à travers mes différentes réalisations.			</p>
+				<div class="social-media">
+					<a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+					<a href="https://fr.linkedin.com/in/ekta-mistry-756896268"><ion-icon name="logo-linkedin"></ion-icon></a>
+				</div>			
+				<a href="C:\Users\ektam\OneDrive\Documents\Portfolio\CV.pdf" download>
+					<button class="btn">Télécharger mon CV</button>
+				</a>
+
+			</div>
+			<div class="present-image">
+				<div class="image-profil">
+					<img src="image/photo-profil.png" alt="" >
+				</div>
+				
+			</div>
+
+
+		</div>
+
+		<h2 class="titre-projet">Mes derniers projets</h2>
+		<div class="last-project">
+			
+			<div class="item first-project">
+				<a class="btn-project"><ion-icon name="earth-outline"></ion-icon></a>
+				<h4>Enquête sur le bilan carbone des membres de l’IUT de Paris-Rives de Seine</h4>
+				<a class="knowmore" href="index_projet.html">En savoir plus</a>
+
+			</div>
+			
+			<div class="item third-project">
+				<a class="btn-project"><ion-icon name="code-outline"></ion-icon></a>
+				<h4>Collecte des coordonnées géographiques des entreprises et des établissements via l’API</h4>
+				<a class="knowmore" href="index_projet.html">En savoir plus</a>
+			</div>
+			<div class="item second-project">
+				<a class="btn-project"><ion-icon name="football-outline"></ion-icon></a>
+				<h4>Etude analytique du lien entre la taille de la population et les performances des pays aux Jeux Olympiques d'hiver</h4>
+				<a class="knowmore" href="index_projet.html">En savoir plus</a>
+			</div>
+			
+			
+
+		</div>
+	<!-- ------------------------- FIN CONTENUE PAGE ------------------------------>
+	
+	<!-- -------------------------DEBUT DU FOOTER ---------------------------- -->
+	<footer>
+        <div class="f-item-con">
+            <div class="app-info">
+                <img src="image/logo.png">
+				<p><a href="mailto:ekta.mistry@etu.u-paris.fr"><ion-icon class="icone-mail" name="mail-open-outline"></ion-icon>  ekta.mistry@etu.u-paris.fr </a></p> 
+				<p><a ><ion-icon name="location-outline"></ion-icon> Ile de france</a></p> 
+				<a href="https://fr.linkedin.com/in/ekta-mistry-756896268" class="btn-icone"><ion-icon name="logo-linkedin"></ion-icon></a>
+				<a id="tel-cv" href="C:\Users\ektam\OneDrive\Documents\Portfolio\CV.pdf" download>
+					<button class="btn-cv">Télécharger CV</button>
+				</a>
+			</div>
+           
+            
+            <div class="g-i-t">
+                <div class="footer-title">CONTACT</div>
+                <form action="/" method="post" >
+                    <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Nom' />
+                    <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' />
+                    <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+                        placeholder='Message...'></textarea>
+						<a href="mailto:ekta.mistry@etu.u-paris.fr">
+							<button class="f-btn">Soumettre</button>
+						</a>
+                </form>
+            </div>
+			<div class="useful-links">
+                <div class="footer-title">Liens</div>
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="index_parcours.html">Parcours</a></li>
+                    <li><a href="index_experience.html">Expérience</a></li>
+                    <li><a href="index_competence.html">Compétence</a></li>
+					<li><a href="index_va.html">Vie associative</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class='cr-con'>Copyright &copy; 2024 | Made by Ekta Mistry</div>
+    </footer>
+
+	<!-- -------------------------FIN DU FOOTER ------------------------------>
+	
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		
+	
+	</body>
+
+</html>
+	
